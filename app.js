@@ -122,19 +122,18 @@ function displayCurrentGameEl() {
 
 //call the renderGame function with the currentGameObject which returns a bunch of HTML elements with your data. Set those elements to a const
     const gameDataDiv = renderGame(currentGameObject);
-    console.log(gameDataDiv);
-
+    // console.log(gameDataDiv);
 
     
     // append the element to the cleared out current game div
-    //append to the currentGameEl the gameDataDiv returned by renderGam
+    //append to the currentGameEl the gameDataDiv returned by renderGame
     currentGameEl.append(gameDataDiv);
 }
 
 
 function displayAllGames() {
     // clear out the past games list in the DOM
-    pastGamesEl.textContent = '';
+    pastGamesEl.innerHTML = '';
 
 
     // loop through the past games in state
